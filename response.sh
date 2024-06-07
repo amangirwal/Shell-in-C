@@ -3,9 +3,9 @@
 #@ITACHIUCHIHASENSEI
 
 # Define variables
-variable=$(dropbear -V 2>&1) 
-number=$(echo "$variable" | grep -oE '[0-9]+([.][0-9]+)?') 
-DV=$(echo "$variable" | awk '{print $2}' | cut -c2-)
+variable=<span class="math-inline">\(dropbear \-V 2\>&1\)  \# Using backticks
+number\=</span>(echo "<span class="math-inline">variable" \| grep \-oE '\[0\-9\]\+\(\[\.\]\[0\-9\]\+\)?'\)
+DV\=</span>(echo "$variable" | awk '{print $2}' | cut -c2-)
 echo "$DV"
 DROPBEAR_URL="https://matt.ucc.asn.au/dropbear/releases/dropbear-$DV.tar.bz2"  # Replace with actual URL
 DROPBEAR_TAR="dropbear.tar.bz2"
